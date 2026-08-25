@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambientes - Colégio Garcez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <!-- Logo do Colégio Garcez no topo -->
+        <img src="Garcez.jpeg" alt="Colégio Garcez" class="logo-garcez">
+        <h1>Colégio Garcez</h1>
+        <p>Explore os nossos ambientes escolares</p>
+    </header>
+
+    <main>
+        <!-- Botoes de selecao dos ambientes -->
+        <nav class="botoes-ambientes">
+            <button onclick="mudarAmbiente('sala')">Sala de Aula</button>
+            <button onclick="mudarAmbiente('patio')">Pátio e Quadra</button>
+            <button onclick="mudarAmbiente('biblioteca')">Biblioteca</button>
+        </nav>
+
+        <!-- Cartao interativo do ambiente -->
+        <section id="card-ambiente" class="card sala">
+            <h2 id="titulo-ambiente">Sala de Aula</h2>
+            
+            <!-- Imagem do ambiente que muda via JS -->
+            <img src="saladeaula.jpeg" alt="Sala de Aula" id="img-ambiente" class="imagem-card">
+
+            <p id="descricao-ambiente">Espaço dedicado ao aprendizado, focado na troca de conhecimento entre alunos e professores.</p>
+            <button id="btn-acao" onclick="executarAcao()">Interagir com o ambiente</button>
+            <p id="mensagem-interacao" class="mensagem"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Colégio Garcez - Projeto Escolar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
